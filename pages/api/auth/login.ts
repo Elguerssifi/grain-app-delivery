@@ -35,6 +35,11 @@ export default async function login(req: NextApiRequest, res: NextApiResponse) {
     return res.status(200).json({ message: 'Login successful', user: { id: user.id, username: user.username, role: user.role } });
 
   } catch (error) {
-    return res.status(500).json({ message: 'Error logging in', error: error.message });
+    // TypeScript: error is of type 'unknown', so we need to assert its type
+    if (error instanceof Error) {
+      return res.status(500).json({ message: 'Error logging in', error: error.message });
+    }
+    // Handle cases where error is not an instance of Error
+    return res.status(500).json({ message: 'Error logging in', error: 'Unknown error' });
   }
 }
