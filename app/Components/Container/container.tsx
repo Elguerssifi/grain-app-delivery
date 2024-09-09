@@ -1,5 +1,5 @@
 "use client"
-import styles from './Container.module.css'
+import styles from './container.module.css'
 interface ContainerProps {
   children : React.ReactNode
 }
