@@ -1,0 +1,46 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Product {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String   @db.Text  // Changed to handle long text
+  image       Bytes    // Store binary data
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+model Customer {
+  id        Int     @id @default(autoincrement())
+  fullName  String
+  email     String  @unique
+  orders    MyOrder[]
+}
+
+model MyOrder {
+  id          Int       @id @default(autoincrement())
+  product     String
+  quantity    String
+  customerId  Int
+  customer    Customer  @relation(fields: [customerId], references: [id])
+}
+
+model AdminUser {
+  id       Int      @id @default(autoincrement())
+  username String   @unique
+  password String   // This will be hashed using bcrypt
+  role     String   @default("admin") // For role-based permissions
+  createdAt DateTime @default(now())
+}
+

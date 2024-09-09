@@ -1,0 +1,130 @@
+.order_section .heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-height: 150px;
+  background: url("/Assets/order-form-image.jpg") center center;
+  padding: 150px;
+  position: relative;
+}
+.order_section .heading::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(1px);
+}
+.order_section .heading h2{
+  position: relative;
+  z-index: 10;
+  font-size: var(--big-font-size);
+  color: var(--body-color);
+}
+.order_section .row{
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 70px 0;
+}
+.order_section .description_buyer{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--big-spacing);
+}
+.order_section .description_buyer .title h3{
+  font-size: 20px;
+  color: var(--main-color);
+}
+.order_section .description_buyer .info{
+  display: flex;
+  flex-direction: column;
+  gap: var(--big-spacing);
+}
+.order_section .description_buyer .info p{
+  line-height: 1.6;
+}
+.order_section .description_buyer .info a{
+  color: var(--main-color);
+  font-size: var(--medium-font-size);
+  text-decoration: underline;
+}
+.order_section .form_order{
+  width: 75%;
+}
+.order_section .form_order form{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--big-spacing);
+}
+.order_section .form_order .input_container.w50{
+  width: calc(50% - var(--big-spacing));
+  display: flex;
+  flex-direction: column;
+  gap: var(--medium-spacing);
+}
+.order_section .form_order .input_container.w100{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--medium-spacing);
+}
+.order_section .form_order .submit_button{
+  width: 100%;
+}
+.order_section .form_order .submit_button button{
+  padding: 10px 25px;
+  font-size: var(--small-font-size);
+  font-weight: var(--medium-font-weight);
+  border-radius: 10px;
+  color: var(--body-color);
+  cursor: pointer;
+  background-color: var(--main-color);
+}
+.order_section .form_order .input_container input,
+.order_section .form_order .input_container textarea{
+  width: 100%;
+  border: 1px solid var(--main-color);
+  padding: var(--medium-spacing);
+  border-radius: 8px;
+}
+.order_section .form_order .input_container textarea{
+  height: 120px;
+}
+.order_section .form_order .input_container label,
+.order_section .form_order .input_container textarea,
+.order_section .form_order .input_container input{
+  font-size: var(--small-font-size);
+  font-weight: var(--medium-font-weight);
+}
+
+.order_section .form_order .input_container input::placeholder{
+  font-size: var(--small-font-size);
+  color: var(--third-color);
+  font-weight: var(--medium-font-weight);
+}
+.order_section .form_order .product_selection{
+  width: 100%;
+  display: flex;
+  gap: var(--big-spacing);
+  flex-direction: column;
+}
+.order_section .form_order .product_selection .input_row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--big-spacing);
+}
+.order_section .form_order .product_selection .input_row .input_container select{
+  height: 100%;
+  font-size: var(--small-font-size);
+  color: var(--main-color);
+  font-weight: var(--medium-font-weight);
+  border: 1px solid var(--main-color);
+  padding: var(--medium-spacing);
+  border-radius: 8px;
+  background:transparent;
+}

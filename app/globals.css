@@ -1,0 +1,51 @@
+:root{
+  --main-color: #543310; 
+  --secondary-color: #74512D; 
+  --third-color : #AF8F6F;
+  --body-color: #F8F4E1; 
+  --white-color : #fff;
+  --black-color: #333;
+  --danger-color : #f14040;
+  --big-font-size: 42px;
+  --medium-font-size: 20px;
+  --small-font-size: 16px;
+  --big-font-weight: 900;
+  --medium-font-weight: 500;
+  --big-spacing: 20px;
+  --medium-spacing: 10px;
+  --small-spacing: 5px;
+  --shadow : 0px 10px 15px -3px rgba(0,0,0,0.2);
+  --shadow2 : 0px 10px 15px 1px rgba(0,0,0,0.3);
+}
+::-webkit-scrollbar {
+  width: 12px; /* Set the width of the scrollbar */
+  background-color: #000; /* Set the color of the scrollbar thumb */
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--body-color);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: var(--body-color);
+  font-family: 'Inter', sans-serif;
+}
+input,button,textarea{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  resize: none;
+}
+a{
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+html{
+  scroll-behavior: smooth;
+}

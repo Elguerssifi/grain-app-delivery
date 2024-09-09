@@ -1,0 +1,106 @@
+.contact_us{
+  padding: 70px 0;
+}
+.contact_us .title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact_us .title h3{
+  font-size: 30px;
+  font-weight: var(--big-font-weight);
+  color: var(--main-color);
+  margin-bottom: var(--big-spacing);
+}
+.contact_us .row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--big-spacing);
+  margin-top: var(--big-spacing);
+}
+.contact_us .contact_left{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.contact_us .contact_left .contact_image_container{
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border-radius: var(--big-spacing);
+  height: 330px;
+}
+.contact_us .contact_left .contact_image_container img{
+  width: 100%;
+  height: 330px;
+  border-radius: var(--big-spacing);
+}
+.contact_us .contact_left .contact_info{
+  display: flex;
+  flex-direction: column;
+  gap: var(--medium-spacing);
+  padding-top: var(--big-spacing);
+  width: 100%;
+}
+.contact_us .contact_left .contact_info h3{
+  color: var(--main-color);
+}
+.contact_us .contact_left .contact_info ul{
+  display: flex;
+  flex-direction: column;
+  gap: var(--medium-spacing);
+}
+.contact_us .contact_left .contact_info li{
+  display: flex;
+  gap: var(--medium-spacing);
+  color: var(--main-color);
+}
+.contact_us .form_contact_container{
+  width: 45%;
+}
+.contact_us .form_contact_container form{
+  display: flex;
+  flex-direction: column;
+  gap: var(--big-spacing);
+}
+.contact_us .form_contact_container .input_container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--medium-spacing);
+}
+.contact_us .form_contact_container .submit_button{
+  width: 100%;
+}
+.contact_us .form_contact_container .submit_button button{
+  padding: 10px 25px;
+  font-size: var(--small-font-size);
+  font-weight: var(--medium-font-weight);
+  border-radius: 10px;
+  color: var(--body-color);
+  cursor: pointer;
+  background-color: var(--main-color);
+}
+.contact_us .form_contact_container .input_container input,
+.contact_us .form_contact_container .input_container textarea{
+  width: 100%;
+  border: 1px solid var(--main-color);
+  padding: var(--medium-spacing);
+  border-radius: 8px;
+}
+.contact_us .form_contact_container .input_container textarea{
+  height: 120px;
+}
+.contact_us .form_contact_container .input_container label,
+.contact_us .form_contact_container .input_container textarea,
+.contact_us .form_contact_container .input_container input{
+  font-size: var(--small-font-size);
+  font-weight: var(--medium-font-weight);
+  color: var(--main-color);
+}
+
+.contact_us .form_contact_container .input_container input::placeholder{
+  font-size: var(--small-font-size);
+  color: var(--third-color);
+  font-weight: var(--medium-font-weight);
+}

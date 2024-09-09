@@ -1,0 +1,62 @@
+.customers_container {
+  width: 100%;
+  overflow-x: auto;
+  background-color: var(--white-color);
+  padding: var(--big-spacing);
+  border-radius: var(--medium-spacing);
+  box-shadow: var(--shadow);
+}
+
+.customerTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.customerTable th,
+.customerTable td {
+  padding: 10px 0px;
+  border-bottom: 1px solid #ddd;
+}
+
+.customerTable th {
+  text-align: left;
+}
+
+.customerTable td {
+  text-align: left;
+}
+
+.customerRow {
+  text-align: left;
+}
+
+.customerNameCell,
+.customerEmailCell,
+.customerOrdersCell {
+  font-weight: var(--medium-font-weight);
+  font-size: var(--small-font-size);
+}
+.customerOrdersCell {
+  white-space: pre-wrap; /* Preserve spaces */
+}
+.updateButton,
+.deleteButton {
+  margin-right: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.updateButton {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+
+.deleteButton {
+  background-color: var(--danger-color);
+  color: white;
+  border: none;
+}

@@ -1,0 +1,91 @@
+.home_container .row{
+  display: flex;
+  flex-direction:column;
+  gap: calc(var(--big-spacing) + var(--medium-spacing));
+}
+.home_container .counter_info{
+  display: flex;
+  justify-content: space-between;
+  gap: var(--big-spacing);
+}
+.item{
+  display: flex;
+  flex-direction: column;
+  gap: var(--medium-spacing);
+  background-color: var(--white-color);
+  width: calc((100% /3) - var(--big-spacing));
+  padding: var(--big-spacing);
+  border-radius: var(--medium-spacing);
+  box-shadow: var(--shadow);
+}
+.item p{
+  color: var(--black-color);
+  font-size: var(--small-font-size);
+  font-weight: var(--big-font-weight);
+}
+.products_container{
+  width: 100%;
+  overflow-x: auto;
+  background-color: var(--white-color);
+  padding: var(--big-spacing);
+  border-radius: var(--medium-spacing);
+  box-shadow: var(--shadow);
+}
+.productRow {
+  text-align: left;
+}
+
+.productImageCell {
+  text-align: left;
+}
+
+.productImage {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.productNameCell {
+  font-weight: var(--medium-font-weight);
+  font-size: var(--small-font-size);
+}
+.updateButton,
+.deleteButton {
+  margin-right: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.updateButton {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+
+.deleteButton {
+  background-color: var(--danger-color);
+  color: white;
+  border: none;
+}
+
+.productTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.productTable th,
+.productTable td {
+  padding: 10px 0px;
+  border-bottom: 1px solid #ddd;
+}
+
+.productTable th {
+  text-align: left;
+}
+
+.productTable td {
+  text-align: left;
+}
+

@@ -1,0 +1,71 @@
+.about{
+  padding: 170px 0 70px 0;
+  position: relative;
+}
+.about::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 170px;
+  width: 25%;
+  height: 150px;
+  background-color: var(--third-color);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.about .row{
+  display: flex;
+  justify-content: space-between;
+  gap: var(--big-spacing);
+  align-items: center;
+}
+.about .images_area{
+  display: flex;
+  width: 50%;
+  gap: var(--big-spacing);
+}
+.about .images_area .image_container_1,
+.about .images_area .image_container_2{
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  width: calc(50% - var(--big-spacing));
+  gap: var(--big-spacing);
+}
+
+.about .images_area img{
+  width: 100%;
+  border-radius: var(--big-spacing);
+}
+
+.about .description_area{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: var(--big-spacing);
+} 
+.about .description_area .about_title{
+  display: flex;
+  flex-direction: column;
+  gap: var(--medium-spacing);
+  position: relative;
+}
+.about .description_area .about_title h3{
+  font-size: 30px;
+  font-weight: var(--big-font-weight);
+  color: var(--main-color);
+}
+.about .description_area .about_title h5{
+  font-size: var(--medium-font-size);
+  font-weight: var(--medium-font-weight);
+  color: var(--secondary-color);
+}
+.about .description_area .description_brand{
+  display: flex;
+  flex-direction: column;
+  gap: var(--big-spacing);
+}
+.about .description_area .description_brand p{
+  line-height: 1.5;
+  color: var(--secondary-color);
+}

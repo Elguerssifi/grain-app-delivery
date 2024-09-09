@@ -1,0 +1,41 @@
+.admin_panel_container{
+  display: flex;
+  justify-content: space-between;
+  gap: var(--big-spacing);
+  padding-top: 70px;
+}
+.admin_panel_container .sidebar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 90px var(--big-spacing);
+  width: 17%;
+  min-height: 100vh;
+  background-color: var(--white-color);
+}
+.admin_panel_container .sidebar ul{
+  display: flex;
+  flex-direction: column;
+  gap: var(--big-spacing);
+}
+.admin_panel_container .sidebar ul li a{
+  display: flex;
+  align-items: center;
+  gap: var(--big-spacing);
+  font-size: var(--small-font-size);
+  color: var(--black-color);
+  padding: var(--medium-spacing);
+  border-radius: 8px;
+}
+.admin_panel_container .sidebar ul li a .icon{
+  font-size: var(--medium-font-size);
+}
+.admin_panel_container .sidebar ul li.active a{
+  background-color:#295F98;
+  color: var(--white-color);
+}
+.admin_panel_container .componentContainer{
+  margin-left: 17%;
+  width: 83%;
+  padding: var(--big-spacing);
+}

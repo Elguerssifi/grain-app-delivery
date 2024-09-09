@@ -1,0 +1,47 @@
+nav.navbar{
+  background-color: var(--white-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px calc(var(--big-spacing) + var(--medium-spacing) ) ;
+  z-index: 99;
+  font-family: 'Inter', sans-serif;
+}
+nav.navbar .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav.navbar .admin_info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--big-spacing);
+}
+nav.navbar .admin_info .admin_img{
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+nav.navbar .admin_info .admin_img img{
+  width: 100%;
+}
+nav.navbar .admin_info .info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--big-spacing);
+}
+nav.navbar .admin_info .info .admin_username h5{
+  color: var(--black-color);
+}
+nav.navbar .admin_info .logout button{
+  background-color: var(--danger-color);
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: var(--body-color);
+  font-weight: var(--big-font-weight);
+  cursor: pointer;
+}

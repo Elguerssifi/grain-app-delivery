@@ -1,0 +1,54 @@
+.footer{
+  padding: 70px 0; 
+  background-color: var(--main-color);
+}
+.footer .row{
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+}
+.footer .logo_and_description, 
+.footer .link_area , 
+.footer .contact{
+  display: flex;
+  flex-direction: column;
+  gap: var(--big-spacing);
+}
+.footer .logo_and_description{
+  width: 40%;
+}
+.footer .link_area{
+  width: 20%;
+}
+.footer .contact{
+  width: auto;
+}
+.footer .logo_and_description .logo h4,
+.footer .link_area .title h4, 
+.footer .contact .title h4{
+  font-size: 25px;
+  color: var(--body-color);
+}
+.footer .logo_and_description p,
+.footer .link_area a{
+  color: var(--body-color);
+  opacity: 0.7;
+  line-height: 1.6;
+}
+.footer .link_area .links{
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  gap: 18px;
+}
+.footer .contact ul{
+  display: flex;
+  flex-direction: column;
+  gap: var(--medium-spacing);
+}
+.footer .contact li{
+  display: flex;
+  gap: var(--medium-spacing);
+  color: var(--body-color);
+  opacity: 0.7;
+}

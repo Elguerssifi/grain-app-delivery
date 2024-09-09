@@ -1,0 +1,50 @@
+.why_choosing_us{
+  padding: 70px 0; 
+}
+.why_choosing_us .row{
+  display: flex;
+  flex-direction: column;
+  gap: var(--big-spacing);
+}
+.why_choosing_us .why_choosing_us_title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.why_choosing_us .why_choosing_us_title h3{
+  font-size: 30px;
+  font-weight: var(--big-font-weight);
+  color: var(--main-color);
+  margin-bottom: var(--big-spacing);
+}
+.why_choosing_us .items_container{
+  display: flex;
+  justify-content: space-between;
+  gap: var(--big-spacing);
+}
+.item_content{
+  display: flex;
+  flex-direction: column;
+  gap: var(--big-spacing);
+  padding: 20px 30px;
+  border-radius: 15px;
+  background-color: var(--body-color);
+  box-shadow: var(--shadow2);
+}
+.item_content .item_heading{
+  display: flex;
+  flex-direction: column;
+  gap: var(--big-spacing);
+  text-align: center;
+}
+.item_content .item_heading .icon{
+  font-size: var(--big-font-size);
+  color: var(--main-color);
+}
+.item_content .item_heading .item_title h4{
+  color: var(--main-color);
+}
+.item_content .item_body p{
+  color: var(--secondary-color);
+  line-height: 1.8;
+}
