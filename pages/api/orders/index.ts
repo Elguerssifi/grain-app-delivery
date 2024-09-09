@@ -46,7 +46,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
         return res.status(201).json(newCustomer);
       }
-    } catch (error) {
+    } catch (error : any) {
       console.error('Error handling order:', error);
       res.status(500).json({ error: 'Failed to handle order.' });
     }

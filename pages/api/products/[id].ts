@@ -23,7 +23,7 @@ const parseFormData = (req: ExtendedNextApiRequest) => {
     let fileBuffer: Buffer | undefined;
 
     // Use multer middleware to handle file upload
-    upload.single('file')(req as any, {} as any, (err) => {
+    upload.single('file')(req as any, {} as any, (err : any) => {
       if (err) {
         return reject(err);
       }
@@ -64,7 +64,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       });
 
       res.status(200).json({ message: 'Product deleted successfully' });
-    } catch (error) {
+    } catch (error : any) {
       console.error('Database Error:', error);
       res.status(500).json({ error: 'Failed to delete product' });
     }
@@ -84,7 +84,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       };
 
       res.status(200).json(productWithBase64);
-    } catch (error) {
+    } catch (error : any) {
       console.error('Database Error:', error);
       res.status(500).json({ error: 'Failed to fetch product' });
     }
@@ -111,7 +111,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       });
 
       res.status(200).json(updatedProduct);
-    } catch (error) {
+    } catch (error : any) {
       console.error('Database Error:', error);
       res.status(500).json({ error: 'Failed to update product' });
     }

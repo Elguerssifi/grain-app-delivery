@@ -41,7 +41,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
       // Do not send sensitive data in response
       return res.status(200).json({ message: 'User updated successfully', user: { id: updatedUser.id, username: updatedUser.username } });
-    } catch (error) {
+    } catch (error : any) {
       console.error('Error updating user:', error);
       return res.status(500).json({ error: 'Internal Server Error', details: error.message });
     }

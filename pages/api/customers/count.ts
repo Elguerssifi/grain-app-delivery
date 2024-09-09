@@ -9,7 +9,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       // Count total customers
       const totalCustomers = await prisma.customer.count();
       res.status(200).json({ count: totalCustomers });
-    } catch (error) {
+    } catch (error : any) {
       res.status(500).json({ error: "Failed to count customers." });
     }
   } else {
